@@ -15,11 +15,6 @@ Corridor/Library/metadata/
 # ===================================== #
 # FMOD                                  #
 # ===================================== #
-Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
-Assets/Plugins/FMOD/Resources/FMODStudioCache.asset.meta
-Assets/StreamingAssets/**/*.bank
-Assets/StreamingAssets/**/*.bank.meta
-fmod_editor.log
-FMOD/Examples_Copy/.cache/
-FMOD/Examples_Copy/.user/
-FMOD/Examples_Copy/.unsaved/
+GGJ2021_FMOD/Examples_Copy/.cache/
+GGJ2021_FMOD/Examples_Copy/.user/
+GGJ2021_FMOD/Examples_Copy/.unsaved/
