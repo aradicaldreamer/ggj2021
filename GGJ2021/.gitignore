@@ -74,14 +74,3 @@ ehthumbs.db
 [Dd]esktop.ini
 Corridor/Library/ShaderCache/
 Corridor/Library/metadata/
-# ===================================== #
-# FMOD                                  #
-# ===================================== #
-Assets/Plugins/FMOD/Resources/FMODStudioCache.asset
-Assets/Plugins/FMOD/Resources/FMODStudioCache.asset.meta
-Assets/StreamingAssets/**/*.bank
-Assets/StreamingAssets/**/*.bank.meta
-fmod_editor.log
-FMOD/GGJ2021/.cache/
-FMOD/GGJ2021/.user/
-FMOD/GGJ2021/.unsaved/
