@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -9,7 +10,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     private Rigidbody2D rb;
     [SerializeField] private Animator animator;
-    private Vector2 movement;
+    private Vector2 playerMovement;
+    
+    [Header("AI")] 
+    [SerializeField] private bool isAI;
+    [SerializeField] private bool isWandering = true;
+    [SerializeField] private Vector2 wanderMovement;
+    [SerializeField] private float wanderUpdateFrequency = 1.0f;
 
     void Start()
     {
@@ -22,28 +29,62 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("No Animator attached to Player object!");
         }
+        StartCoroutine(AIWanderCoroutine());
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerControls();
+        if (isAI)
+        {
+            AIControls();
+        }
+        else
+        {
+            PlayerControls();   
+        }
     }
 
     void FixedUpdate()
     {
-        MovePlayer();
+        if(isWandering)
+        {
+            MoveCharacter(wanderMovement);
+        }
+        else
+        {
+            MoveCharacter(playerMovement);
+        }
+    }
+
+    private void AIControls()
+    {
+        AIWander();
+    }
+
+    private void AIWander()
+    {
+        AnimatePlayer(wanderMovement);
+    }
+
+    IEnumerator AIWanderCoroutine()
+    {
+        while (isWandering)
+        {
+            wanderMovement = Random.insideUnitCircle;
+            yield return new WaitForSeconds(wanderUpdateFrequency);
+        }
     }
 
     private void PlayerControls()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        playerMovement.x = Input.GetAxisRaw("Horizontal");
+        playerMovement.y = Input.GetAxisRaw("Vertical");
 
-        AnimatePlayer();
+        AnimatePlayer(playerMovement);
     }
 
-    private void MovePlayer()
+    private void MoveCharacter(Vector2 movement)
     {
         if(rb == null)
         {
@@ -53,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    private void AnimatePlayer()
+    private void AnimatePlayer(Vector2 movement)
     {
         if(animator == null)
         {

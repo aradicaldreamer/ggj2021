@@ -120,6 +120,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   animator: {fileID: 98110995804442031}
+  isAI: 1
+  isWandering: 1
+  wanderMovement: {x: 0, y: 0}
+  wanderUpdateFrequency: 1
 --- !u!95 &98110995804442031
 Animator:
   serializedVersion: 3
