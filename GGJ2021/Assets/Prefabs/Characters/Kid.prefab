@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8394034720539317357
+--- !u!1001 &6292266090701818568
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,27 +9,35 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5300617976341367237, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 3.08
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367237, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5.65
+      value: 4.83
       objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367238, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 4fe0db55e2f324beea0e7bababc3f83f, type: 2}
+      objectReference: {fileID: 9100000, guid: 8b127a36f6b6249d0b682ec7272436e3, type: 2}
     - target: {fileID: 5300617976341367239, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367239, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300617976341367239, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300617976341367239, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367239, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367239, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_LocalPosition.z
@@ -66,14 +74,14 @@ PrefabInstance:
     - target: {fileID: 5300617976341367240, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 298f289945d8148caac584098ac1fdb9, type: 3}
+      objectReference: {fileID: 21300000, guid: 3abe782bbf4814dcb9e89ce90f5bce9f, type: 3}
     - target: {fileID: 5300617976341367242, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: isWanderingAI
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367243, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_Name
-      value: Mum (1)
+      value: Kid (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
