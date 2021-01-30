@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
+        
     }
 
     private void UpdateFlashlightRotation()
@@ -112,5 +112,4 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
     }
-
 }
