@@ -3661,6 +3661,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 673776885, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000071172
+      objectReference: {fileID: 0}
+    - target: {fileID: 673776885, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.5327
+      objectReference: {fileID: 0}
+    - target: {fileID: 673776886, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 57e3c3c66e73440e5a23c325723c945c, type: 2}
+    - target: {fileID: 673776886, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 673776886, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.12149869
+      objectReference: {fileID: 0}
+    - target: {fileID: 673776886, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 673776886, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7160909621445150346, guid: 57e3c3c66e73440e5a23c325723c945c, type: 2}
+    - target: {fileID: 673776886, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278198124
+      objectReference: {fileID: 0}
     - target: {fileID: 2472550617594869905, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
       propertyPath: m_Name
       value: UI
