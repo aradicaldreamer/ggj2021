@@ -3147,7 +3147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 98110995804442030, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: isWanderingAI
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 98110995804442031, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: m_Controller
