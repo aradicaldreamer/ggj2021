@@ -3663,7 +3663,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2472550617594869905, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
       propertyPath: m_Name
-      value: Timer
+      value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 2472550617594869917, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
       propertyPath: m_Pivot.x

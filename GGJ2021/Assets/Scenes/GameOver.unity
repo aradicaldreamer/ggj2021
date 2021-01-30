@@ -607,6 +607,7 @@ GameObject:
   - component: {fileID: 249165035}
   - component: {fileID: 249165034}
   - component: {fileID: 249165036}
+  - component: {fileID: 249165037}
   m_Layer: 5
   m_Name: Instructions
   m_TagString: Untagged
@@ -687,6 +688,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1056d4f42c53d479ebf5d83452df4376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &249165037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249165032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb4dabe035524836aa534de0f47da32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 457959650}
+  besttimeText: {fileID: 1082489456}
 --- !u!1 &444772491
 GameObject:
   m_ObjectHideFlags: 0
