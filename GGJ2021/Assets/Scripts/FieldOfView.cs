@@ -6,16 +6,25 @@ using UnityEngine;
 
 public class FieldOfView : MonoBehaviour
 {
+    [SerializeField] private LayerMask layerMask;
+    [SerializeField] private LayerMask playerLayerMask;
+    private Mesh mesh;
+    [SerializeField] private float fov = 90f;
+    [SerializeField] private int rayCount = 10;
+    private Vector3 origin;
+    private float startingAngle;
+    
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        Mesh mesh = new Mesh();
+        mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-        
-        float fov = 90f;
-        Vector3 origin = Vector3.zero;
-        int rayCount = 50;
-        float angle = 0f;
+        origin = Vector3.zero;
+    }
+
+    private void LateUpdate()
+    {
+        float angle = startingAngle;
         float angleIncrease = fov / rayCount;
         float viewDistance = 5f;
         
@@ -30,7 +39,7 @@ public class FieldOfView : MonoBehaviour
         for (int i = 0; i <= rayCount; i++)
         {
             Vector3 vertex;
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
             if (raycastHit2D.collider == null)
             {
                 // No hit
@@ -39,8 +48,14 @@ public class FieldOfView : MonoBehaviour
             else
             {
                 // hit
-                Debug.Log("Raycast hit object with name " + raycastHit2D.transform.name);
+                // Debug.Log("Raycast hit object with name " + raycastHit2D.transform.name);
                 vertex = raycastHit2D.point;
+            }
+
+            RaycastHit2D catCheck = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, playerLayerMask);
+            if (catCheck.collider != null)
+            {
+                Debug.Log("Cat Found!");
             }
 
             verticies[vertexIndex] = vertex;
@@ -63,16 +78,29 @@ public class FieldOfView : MonoBehaviour
         mesh.triangles = triangles;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     Vector3 GetVectorFromAngle(float angle)
     {
         // angle = 0 -> 360
         float angleRad = angle * (Mathf.PI/180f);
         return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
+    }
+
+    float GetAngleFromVectorFloat(Vector3 dir)
+    {
+        dir = dir.normalized;
+        float n = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (n < 0) n += 360;
+
+        return n;
+    }
+
+    public void SetOrigin(Vector3 origin)
+    {
+        this.origin = origin;
+    }
+
+    public void SetAimDirection(Vector3 aimDirection)
+    {
+        startingAngle = GetAngleFromVectorFloat(aimDirection) - fov / 2f;
     }
 }

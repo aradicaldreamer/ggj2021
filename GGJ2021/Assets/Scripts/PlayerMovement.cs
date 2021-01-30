@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     private Vector2 playerMovement;
     [SerializeField] private GameObject flashlight;
+    [SerializeField] private FieldOfView fov;
     
     [Header("AI")] 
     [SerializeField] private bool isWanderingAI = false;
@@ -43,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (fov != null)
+        {
+            Vector3 aimDirection = new Vector3(wanderMovement.x, wanderMovement.y, 0);
+            //Vector3 aimDirection = (targetPosition - transform.position.normalized);
+            fov.SetAimDirection(aimDirection);
+            fov.SetOrigin(transform.position);
+        }
         if (isWanderingAI)
         {
             AnimatePlayer(wanderMovement);
@@ -51,6 +59,33 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerControls();   
         }
+    }
+
+    Vector3 GetMouseWorldPosition() {
+            Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+            vec.z = 0f;
+            return vec;
+        }
+
+        Vector3 GetMouseWorldPositionWithZ() {
+            return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
+        }
+        Vector3 GetMouseWorldPositionWithZ(Camera worldCamera) {
+            return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
+        }
+        Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera) {
+            Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
+            return worldPosition;
+        }
+
+    private void UpdateFOVRotation(Vector2 movement)
+    {
+        float rads = Mathf.Atan2(movement.y, movement.x);
+        float degrees = rads * Mathf.Rad2Deg;
+
+        fov.transform.localPosition = new Vector3(Mathf.Cos(rads) * 1, Mathf.Sin(rads) * 1, 0);
+        fov.transform.localEulerAngles = new Vector3(0, 0, degrees - 90);
+        
     }
 
     void FixedUpdate()
@@ -112,12 +147,6 @@ public class PlayerMovement : MonoBehaviour
         //     currentTargetNumber ++;
         //     if (currentTargetNumber > aiNavigationTargets.Length) currentTargetNumber = 0;
         // } 
-    }
-
-    private void UpdateFlashlightRotation()
-    {
-        if (flashlight == null) return;
-        
     }
 
     private void AnimatePlayer(Vector2 movement)

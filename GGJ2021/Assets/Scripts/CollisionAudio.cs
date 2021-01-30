@@ -28,7 +28,7 @@ public class CollisionAudio : MonoBehaviour
         {
             // Launch sound event with audioEventToLaunch
             FMODUnity.RuntimeManager.PlayOneShot(eventName, transform.position);
-            Debug.Log("YAY!");
+            //Debug.Log("YAY!");
             
         }
     }
