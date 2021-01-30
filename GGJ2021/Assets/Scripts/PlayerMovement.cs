@@ -44,13 +44,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (fov != null)
-        {
-            Vector3 aimDirection = new Vector3(wanderMovement.x, wanderMovement.y, 0);
-            //Vector3 aimDirection = (targetPosition - transform.position.normalized);
-            fov.SetAimDirection(aimDirection);
-            fov.SetOrigin(transform.position);
-        }
         if (isWanderingAI)
         {
             AnimatePlayer(wanderMovement);
@@ -61,31 +54,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    Vector3 GetMouseWorldPosition() {
-            Vector3 vec = GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-            vec.z = 0f;
-            return vec;
-        }
-
-        Vector3 GetMouseWorldPositionWithZ() {
-            return GetMouseWorldPositionWithZ(Input.mousePosition, Camera.main);
-        }
-        Vector3 GetMouseWorldPositionWithZ(Camera worldCamera) {
-            return GetMouseWorldPositionWithZ(Input.mousePosition, worldCamera);
-        }
-        Vector3 GetMouseWorldPositionWithZ(Vector3 screenPosition, Camera worldCamera) {
-            Vector3 worldPosition = worldCamera.ScreenToWorldPoint(screenPosition);
-            return worldPosition;
-        }
 
     private void UpdateFOVRotation(Vector2 movement)
     {
-        float rads = Mathf.Atan2(movement.y, movement.x);
-        float degrees = rads * Mathf.Rad2Deg;
-
-        fov.transform.localPosition = new Vector3(Mathf.Cos(rads) * 1, Mathf.Sin(rads) * 1, 0);
-        fov.transform.localEulerAngles = new Vector3(0, 0, degrees - 90);
-        
+        Vector3 aimDirection = new Vector3(movement.x, movement.y, 0);
+        fov.SetAimDirection(aimDirection);
+        fov.SetOrigin(transform.position);
     }
 
     void FixedUpdate()
@@ -159,5 +133,9 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+        if (fov != null)
+        {
+            UpdateFOVRotation(movement);
+        }
     }
 }

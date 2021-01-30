@@ -101,6 +101,6 @@ public class FieldOfView : MonoBehaviour
 
     public void SetAimDirection(Vector3 aimDirection)
     {
-        startingAngle = GetAngleFromVectorFloat(aimDirection) - fov / 2f;
+        startingAngle = (GetAngleFromVectorFloat(aimDirection) - fov / 2f) + 90f;
     }
 }
