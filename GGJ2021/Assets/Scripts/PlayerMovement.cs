@@ -14,9 +14,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject flashlight;
     
     [Header("AI")] 
-    [SerializeField] private bool isAI;
-    [SerializeField] private bool isWandering = false;
-    [SerializeField] private Vector2 wanderMovement;
+    [SerializeField] private bool isWanderingAI = false;
+    [SerializeField] private bool isSetPathAI = false;
+    private int currentTargetNumber = 0;
+    [SerializeField] private Transform[] aiNavigationTargets;
+    private Vector2 setPathDirection;
+    private Vector2 wanderMovement;
     [SerializeField] private float wanderUpdateFrequency = 1.0f;
 
     void Start()
@@ -30,15 +33,19 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("No Animator attached to Player object!");
         }
+        if (isSetPathAI && (aiNavigationTargets == null || aiNavigationTargets.Length == 0))
+        {
+            Debug.Log(this.name + " is set to follow a path but has no targets!");
+        }
         StartCoroutine(AIWanderCoroutine());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isAI)
+        if (isWanderingAI)
         {
-            AIControls();
+            AnimatePlayer(wanderMovement);
         }
         else
         {
@@ -48,9 +55,13 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(isWandering)
+        if(isWanderingAI)
         {
             MoveCharacter(wanderMovement);
+        }
+        else if (isSetPathAI && aiNavigationTargets != null) 
+        {
+            MoveCharacterOnSetPath(aiNavigationTargets[currentTargetNumber]);
         }
         else
         {
@@ -58,19 +69,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void AIControls()
-    {
-        AIWander();
-    }
-
-    private void AIWander()
-    {
-        AnimatePlayer(wanderMovement);
-    }
-
     IEnumerator AIWanderCoroutine()
     {
-        while (isWandering)
+        while (isWanderingAI)
         {
             wanderMovement = Random.insideUnitCircle;
             yield return new WaitForSeconds(wanderUpdateFrequency);
@@ -85,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         AnimatePlayer(playerMovement);
     }
 
-    private void MoveCharacter(Vector2 movement)
+    void MoveCharacter(Vector2 movement)
     {
         if(rb == null)
         {
@@ -93,12 +94,30 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        
+    }
+
+    private void MoveCharacterOnSetPath(Transform targetTransform)
+    {
+        // Debug.Log("Moving Character at position " + rb.position.ToString() + " towards target at position " + targetTransform.position.ToString());
+        // setPathDirection = new Vector2(targetTransform.position.x -rb.position.x, targetTransform.position.y - rb.position.y);
+        // float moveDistance = moveSpeed * Time.fixedDeltaTime;
+        // Debug.Log("Distance to target");
+        // if (setPathDirection > moveDistance)
+        // {
+        //     rb.MovePosition(rb.position + vectorToTarget.normalized *moveDistance);
+        // }
+        // else
+        // {
+        //     Debug.Log("Setting next target");
+        //     currentTargetNumber ++;
+        //     if (currentTargetNumber > aiNavigationTargets.Length) currentTargetNumber = 0;
+        // } 
     }
 
     private void UpdateFlashlightRotation()
     {
         if (flashlight == null) return;
+        
     }
 
     private void AnimatePlayer(Vector2 movement)
