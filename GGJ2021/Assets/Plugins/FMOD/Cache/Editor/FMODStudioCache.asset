@@ -283,6 +283,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1274
+--- !u!114 &-6495003838698652128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/objects/table
+  m_EditorClassIdentifier: 
+  Path: event:/objects/table
+  guid: 9f195c17d0c5f9478e78451b8048c19d
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 480
 --- !u!114 &-6145727921340635558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,7 +998,7 @@ MonoBehaviour:
   Path: ../GGJ2021_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476322670000000
+  lastModified: 637476356550000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1156,6 +1179,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-554977323331764484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/objects/tv
+  m_EditorClassIdentifier: 
+  Path: event:/objects/tv
+  guid: 3d87a55dcee37d43946ea7e917b9b935
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7000
 --- !u!114 &-265103863491523864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1180,6 +1226,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-242695480032555392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ2021_FMOD/Build/Desktop/music.bank
+  Name: music
+  StudioPath: bank:/music
+  lastModified: 637476356550000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1261,7 @@ MonoBehaviour:
   - {fileID: -2164866207251790631}
   - {fileID: -1915286579324830206}
   - {fileID: 2475493992307405910}
+  - {fileID: -242695480032555392}
   EditorEvents:
   - {fileID: 7584206588103361516}
   - {fileID: 8887360865947186852}
@@ -1204,12 +1270,16 @@ MonoBehaviour:
   - {fileID: 5237506670177263357}
   - {fileID: 3187354136757125568}
   - {fileID: -5976359259654815466}
+  - {fileID: 1375674048844080912}
+  - {fileID: -554977323331764484}
+  - {fileID: 2252155915110724953}
+  - {fileID: -6495003838698652128}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1915286579324830206}
   StringsBanks:
   - {fileID: -2164866207251790631}
-  stringsBankWriteTime: 637476322670000000
+  stringsBankWriteTime: 637476356550000000
   cacheVersion: 6
 --- !u!114 &31462771221439266
 MonoBehaviour:
@@ -1366,6 +1436,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 56888
+--- !u!114 &1375674048844080912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music
+  m_EditorClassIdentifier: 
+  Path: event:/music
+  guid: 20a6d28e2e27b74f8e00a1f2d6fb9e94
+  Banks:
+  - {fileID: -242695480032555392}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 47981
 --- !u!114 &1400583432111500477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,6 +1548,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 147
+--- !u!114 &2252155915110724953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/objects/couch
+  m_EditorClassIdentifier: 
+  Path: event:/objects/couch
+  guid: 951d56ef38951744b4d26933eb539a07
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &2475493992307405910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,7 +1586,7 @@ MonoBehaviour:
   Path: ../GGJ2021_FMOD/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 637476322670000000
+  lastModified: 637476356550000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
