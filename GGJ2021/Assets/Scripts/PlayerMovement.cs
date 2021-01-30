@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private Animator animator;
     private Vector2 playerMovement;
-    [SerializeField] private GameObject flashlight;
+    //[SerializeField] private GameObject flashlight;
     [SerializeField] private FieldOfView fov;
     
     [Header("AI")] 
