@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("AI")] 
     [SerializeField] private bool isAI;
-    [SerializeField] private bool isWandering = true;
+    [SerializeField] private bool isWandering = false;
     [SerializeField] private Vector2 wanderMovement;
     [SerializeField] private float wanderUpdateFrequency = 1.0f;
 
