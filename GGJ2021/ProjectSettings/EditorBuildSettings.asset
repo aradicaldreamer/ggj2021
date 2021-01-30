@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainmenuPrototype.unity
+    guid: 90dc4519fbcab40dd9ee2154306cce9c
+  - enabled: 1
+    path: Assets/Scenes/Prototype_Priyam 1.unity
+    guid: 4c973543fe14149f6b73f7156b65d373
+  - enabled: 1
+    path: Assets/Scenes/EndMenu.unity
+    guid: 4e66ee580b1cd4c0f9c28cbd9510a302
   m_configObjects: {}
