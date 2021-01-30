@@ -98,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ba70cea55e4834d17bbe83f11cc6de46, type: 3}
+    - target: {fileID: 5300617976341367242, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
+      propertyPath: isWanderingAI
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5300617976341367243, guid: 278a13bdace9e4692877d900de0ef738, type: 3}
       propertyPath: m_Name
       value: Roomba
