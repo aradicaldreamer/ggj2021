@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private Animator animator;
     private Vector2 playerMovement;
+    [SerializeField] private GameObject flashlight;
     
     [Header("AI")] 
     [SerializeField] private bool isAI;
@@ -92,6 +93,12 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+    }
+
+    private void UpdateFlashlightRotation()
+    {
+        if (flashlight == null) return;
     }
 
     private void AnimatePlayer(Vector2 movement)

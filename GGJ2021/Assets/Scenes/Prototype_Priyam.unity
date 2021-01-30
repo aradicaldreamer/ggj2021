@@ -3449,6 +3449,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   animator: {fileID: 1731173164}
+  isAI: 0
+  isWandering: 0
+  wanderMovement: {x: 0, y: 0}
+  wanderUpdateFrequency: 1
 --- !u!95 &1731173164
 Animator:
   serializedVersion: 3
