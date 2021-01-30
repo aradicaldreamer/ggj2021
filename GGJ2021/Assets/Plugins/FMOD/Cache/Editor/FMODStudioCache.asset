@@ -218,7 +218,7 @@ MonoBehaviour:
   Path: ../GGJ2021_FMOD/Build/Desktop/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 637476413880000000
+  lastModified: 637476833740000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -246,7 +246,6 @@ MonoBehaviour:
   - {fileID: 3395318818795328385}
   - {fileID: -7099375774711456892}
   - {fileID: 821697269457502385}
-  - {fileID: 2121608926206413601}
   - {fileID: -7120747608148178615}
   - {fileID: -6064147860709290302}
   - {fileID: 6259148460519997753}
@@ -260,7 +259,7 @@ MonoBehaviour:
   - {fileID: -1878333983534436215}
   StringsBanks:
   - {fileID: 4863530526328491610}
-  stringsBankWriteTime: 637476393870000000
+  stringsBankWriteTime: 637476833740000000
   cacheVersion: 6
 --- !u!114 &821697269457502385
 MonoBehaviour:
@@ -388,7 +387,7 @@ MonoBehaviour:
   Path: ../GGJ2021_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476393870000000
+  lastModified: 637476833740000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
