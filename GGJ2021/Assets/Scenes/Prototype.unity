@@ -1725,19 +1725,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 98110995804442018, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: m_Name
-      value: Human
+      value: Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 98110995804442028, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3d95d7369c84c41528cbc146c3471e50, type: 3}
     - target: {fileID: 98110995804442029, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 98110995804442029, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1815144
+      objectReference: {fileID: 0}
+    - target: {fileID: 98110995804442029, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.20279199
+      objectReference: {fileID: 0}
+    - target: {fileID: 98110995804442029, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.0681
       objectReference: {fileID: 0}
     - target: {fileID: 98110995804442029, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.2556
       objectReference: {fileID: 0}
     - target: {fileID: 98110995804442029, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1772,8 +1784,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 98110995804442030, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+      propertyPath: isAI
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 98110995804442030, guid: 49762815070f745ff92aeb97567f589c, type: 3}
       propertyPath: flashlight
       value: 
       objectReference: {fileID: 971898076}
+    - target: {fileID: 98110995804442031, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f32643a999d3046bbb21f74773ce932f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49762815070f745ff92aeb97567f589c, type: 3}
