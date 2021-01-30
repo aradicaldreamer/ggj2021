@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f8a14c07-f7ea-4307-961f-7efd55461c05}">
+		<property name="assetPath">
+			<value>sneaky_kitty_lp.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>47.981678004535148</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{520e42d2-7787-44ad-bf33-cfe908e6cbac}</destination>
+		</relationship>
+	</object>
+</objects>
