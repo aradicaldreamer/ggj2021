@@ -352,6 +352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7086216603121405172, guid: 1fc33ec4e7bc94783a6b9be0d9eff4ed, type: 3}
+      propertyPath: isWanderingAI
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7086216603121405173, guid: 1fc33ec4e7bc94783a6b9be0d9eff4ed, type: 3}
       propertyPath: m_Name
       value: Cat
