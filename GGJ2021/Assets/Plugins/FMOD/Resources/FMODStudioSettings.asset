@@ -393,8 +393,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../GGJ2021_FMOD/Examples_Copy/Examples_Copy.fspro
-  sourceBankPath: ../GGJ2021_FMOD/Examples_Copy/Build
+  sourceProjectPath: ../GGJ2021_FMOD/GGJ 2021 FMOD.fspro
+  sourceBankPath: ..\GGJ2021_FMOD\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -413,8 +413,10 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master
+  Banks:
+  - sfx
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
