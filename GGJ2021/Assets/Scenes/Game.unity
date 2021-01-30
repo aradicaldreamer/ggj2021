@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 95322792}
   - component: {fileID: 95322791}
   - component: {fileID: 95322793}
+  - component: {fileID: 95322794}
   m_Layer: 0
   m_Name: cat tower
   m_TagString: Untagged
@@ -232,6 +233,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.69, y: 8.33}
   m_EdgeRadius: 0
+--- !u!114 &95322794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95322790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/tower
 --- !u!95 &164070239 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 98110995804442031, guid: 49762815070f745ff92aeb97567f589c, type: 3}
@@ -416,6 +431,7 @@ GameObject:
   - component: {fileID: 854637079}
   - component: {fileID: 854637078}
   - component: {fileID: 854637077}
+  - component: {fileID: 854637080}
   m_Layer: 0
   m_Name: pot plant (1)
   m_TagString: Untagged
@@ -514,6 +530,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854637080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854637076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/pot
 --- !u!1 &918969963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2021,7 @@ GameObject:
   - component: {fileID: 1021182515}
   - component: {fileID: 1021182514}
   - component: {fileID: 1021182513}
+  - component: {fileID: 1021182516}
   m_Layer: 0
   m_Name: pot plant
   m_TagString: Untagged
@@ -2089,6 +2120,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1021182516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021182512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/pot
 --- !u!1 &1289266787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2145,7 @@ GameObject:
   - component: {fileID: 1289266789}
   - component: {fileID: 1289266788}
   - component: {fileID: 1289266790}
+  - component: {fileID: 1289266791}
   m_Layer: 0
   m_Name: chair
   m_TagString: Untagged
@@ -2198,6 +2244,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.31, y: 4.42}
   m_EdgeRadius: 0
+--- !u!114 &1289266791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289266787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/couch
 --- !u!1001 &1291696113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2595,6 +2655,8 @@ GameObject:
   - component: {fileID: 1502361159}
   - component: {fileID: 1502361158}
   - component: {fileID: 1502361160}
+  - component: {fileID: 1502361161}
+  - component: {fileID: 1502361162}
   m_Layer: 0
   m_Name: tv
   m_TagString: Untagged
@@ -2693,6 +2755,43 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.45, y: 6.96}
   m_EdgeRadius: 0
+--- !u!114 &1502361161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502361157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/objects/tv
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 11.889613
+--- !u!114 &1502361162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502361157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/table
 --- !u!1 &1528376170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2803,7 @@ GameObject:
   - component: {fileID: 1528376173}
   - component: {fileID: 1528376172}
   - component: {fileID: 1528376171}
+  - component: {fileID: 1528376174}
   m_Layer: 0
   m_Name: table
   m_TagString: Untagged
@@ -2802,6 +2902,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1528376174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528376170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/table
 --- !u!1 &1588448801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 971898076, guid: 49762815070f745ff92aeb97567f589c, type: 3}
@@ -3034,6 +3148,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 971898076, guid: 49762815070f745ff92aeb97567f589c, type: 3}
   m_PrefabInstance: {fileID: 1638629770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1741693061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 98110995804442018, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+  m_PrefabInstance: {fileID: 1908597058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741693067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741693061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/objects/roomba
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 6.297238
 --- !u!1 &1873048269
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,6 +3187,7 @@ GameObject:
   - component: {fileID: 1873048271}
   - component: {fileID: 1873048270}
   - component: {fileID: 1873048272}
+  - component: {fileID: 1873048273}
   m_Layer: 0
   m_Name: chair (1)
   m_TagString: Untagged
@@ -3143,6 +3286,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.31, y: 4.42}
   m_EdgeRadius: 0
+--- !u!114 &1873048273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873048269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/couch
 --- !u!1001 &1908597058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3264,6 +3421,34 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: c39c549cae8374958a31b866ac6ae2ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+--- !u!1 &1934057884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 98110995804442018, guid: 49762815070f745ff92aeb97567f589c, type: 3}
+  m_PrefabInstance: {fileID: 1304894932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1934057890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934057884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/objects/roomba
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 6.2972383
 --- !u!1 &1996993454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,7 +3540,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996993454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
@@ -3484,8 +3669,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagToCompare: 
-  eventName: 
+  tagToCompare: Cat
+  eventName: event:/objects/couch
+--- !u!1 &2124757765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2124757767}
+  - component: {fileID: 2124757766}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2124757766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124757765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/music
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!4 &2124757767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124757765}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.58561116, y: 0.44881457, z: -0.72470975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &98110995780125188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3588,3 +3827,43 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 98110995804442018, guid: 49762815070f745ff92aeb97567f589c, type: 3}
   m_PrefabInstance: {fileID: 98110995780125188}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &98110995780125190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98110995780125189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ead6fada77838e43b4e658478f52f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &98110995780125196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98110995780125189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 98110995780125189}
+  ListenerNumber: -1
+--- !u!114 &98110995780125197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98110995780125189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7026d5e2d6db74497b2f381a6d02d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToCompare: Cat
+  eventName: event:/objects/table
