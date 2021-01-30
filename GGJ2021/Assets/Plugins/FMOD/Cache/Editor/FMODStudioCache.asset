@@ -342,6 +342,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-5976359259654815466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/kid/kid_huh
+  m_EditorClassIdentifier: 
+  Path: event:/characters/kid/kid_huh
+  guid: ca6d7ce9edd2774f9e2868017ffeaeb0
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &-5903866204026024440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +405,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-5676569252207967378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/cat/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/characters/cat/footsteps
+  guid: 9a5ccd2ea627da44b4356fd162455109
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 862
 --- !u!114 &-5608773287703110648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,6 +960,46 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-2164866207251790631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ2021_FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637476165931190025
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1098
+  Exists: 1
+--- !u!114 &-1915286579324830206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ2021_FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637476165931070054
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1896856879100370706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,52 +1195,23 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 3234972288125349981}
-  - {fileID: -3618828515224292835}
-  - {fileID: -1400188723652963224}
-  - {fileID: 7784941238540578477}
-  - {fileID: -1054717180886463959}
-  - {fileID: -4366775049987997201}
-  - {fileID: -6145727921340635558}
-  - {fileID: -2815893845228086338}
-  - {fileID: -3639970349205975599}
+  - {fileID: -2164866207251790631}
+  - {fileID: -1915286579324830206}
+  - {fileID: 2475493992307405910}
   EditorEvents:
-  - {fileID: 483823764113161155}
-  - {fileID: -265103863491523864}
-  - {fileID: -8358146702740981734}
-  - {fileID: 7130000345222969218}
-  - {fileID: -3791111837770610191}
-  - {fileID: 5628819309052217378}
-  - {fileID: 726785922363086253}
-  - {fileID: -5025381153496810046}
-  - {fileID: 901299325982634585}
-  - {fileID: -3089290982312477387}
-  - {fileID: -6562085116138018912}
-  - {fileID: -3242337834944543014}
-  - {fileID: 1930415282968489876}
-  - {fileID: -6854941932735849543}
-  - {fileID: -3429262549660169528}
-  - {fileID: 7914920058662145605}
-  - {fileID: -7347616496979792089}
-  - {fileID: 5702218185025989567}
-  - {fileID: -3600042416760085844}
-  - {fileID: -5608773287703110648}
-  - {fileID: -2718934620415803663}
-  - {fileID: -8002890018916909012}
-  - {fileID: -8057573434594363772}
-  - {fileID: 1876532867712822854}
-  - {fileID: 2909627509441893341}
-  - {fileID: 5596601067660582881}
-  - {fileID: -4580741596360897013}
-  - {fileID: 204503509149918445}
-  - {fileID: 3416548455086861795}
-  - {fileID: -2721940778394224847}
+  - {fileID: 7584206588103361516}
+  - {fileID: 8887360865947186852}
+  - {fileID: 9065818095918412612}
+  - {fileID: -5676569252207967378}
+  - {fileID: 5237506670177263357}
+  - {fileID: 3187354136757125568}
+  - {fileID: -5976359259654815466}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1054717180886463959}
+  - {fileID: -1915286579324830206}
   StringsBanks:
-  - {fileID: 3234972288125349981}
-  stringsBankWriteTime: 637475944700000000
+  - {fileID: -2164866207251790631}
+  stringsBankWriteTime: 637476165931190025
   cacheVersion: 6
 --- !u!114 &31462771221439266
 MonoBehaviour:
@@ -1400,6 +1457,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 147
+--- !u!114 &2475493992307405910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: ../GGJ2021_FMOD/Build/Desktop/sfx.bank
+  Name: sfx
+  StudioPath: bank:/sfx
+  lastModified: 637476165944012892
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2516005403609984251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,6 +1559,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &3187354136757125568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/kid/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/characters/kid/footsteps
+  guid: 9703ae864a5d7b4cac9257998f000d2d
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 234
 --- !u!114 &3234972288125349981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,6 +1710,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &5237506670177263357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/dad/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/characters/dad/footsteps
+  guid: 4252cb0ac939574cb55c6a3e0501c892
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 300
 --- !u!114 &5263825436699325188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1807,6 +1929,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &7584206588103361516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/mum/mum_huh
+  m_EditorClassIdentifier: 
+  Path: event:/characters/mum/mum_huh
+  guid: 24ac062b78ab4341b7249b57fa49eaf4
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 100
 --- !u!114 &7617232662158522528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1910,3 +2055,49 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &8887360865947186852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/cat/meow
+  m_EditorClassIdentifier: 
+  Path: event:/characters/cat/meow
+  guid: 251264b4fcdcc248991b129b0adae324
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &9065818095918412612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/characters/mum/footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/characters/mum/footsteps
+  guid: 3096bdecc6a4eb4288350c24abc11ab8
+  Banks:
+  - {fileID: 2475493992307405910}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 300
