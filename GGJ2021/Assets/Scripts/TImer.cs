@@ -12,6 +12,7 @@ public class TImer : MonoBehaviour
    public bool takingAway = false;
    public TMP_Text timeprefs;
    public TMP_Text besttimeprefs;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,8 +53,8 @@ public class TImer : MonoBehaviour
 
     public void GameOver()
     {
-      if (Input.GetKeyDown("space")) {
-      SceneManager.LoadScene("GameOver");
-    }
+      //if (Input.GetKeyDown("space")) {
+      //SceneManager.LoadScene("GameOver");
+      //}
     }
 }
