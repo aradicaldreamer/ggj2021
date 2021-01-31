@@ -572,6 +572,7 @@ MonoBehaviour:
   musicTrackEvent: event:/ui/main_menu
   hoverEventName: event:/ui/tick
   clickEventName: event:/ui/confirm
+  playEventName: event:/ui/play
 --- !u!114 &249165037
 MonoBehaviour:
   m_ObjectHideFlags: 0
