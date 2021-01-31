@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{b89d8b04-549c-448b-a407-93712f75b8f4}">
+		<property name="name">
+			<value>fade</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6ce4f3e6-b62c-4445-b5ee-4fcb910579a7}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{8d24ceed-ca1e-41b1-86d7-7e792954583b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{8d24ceed-ca1e-41b1-86d7-7e792954583b}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>3</value>
+		</property>
+	</object>
+</objects>
