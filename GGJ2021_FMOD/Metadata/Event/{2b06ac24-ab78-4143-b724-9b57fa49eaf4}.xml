@@ -96,7 +96,7 @@
 			<value>0.10000000000000001</value>
 		</property>
 		<property name="spawnRate">
-			<value>60</value>
+			<value>32</value>
 		</property>
 		<property name="maximumScatterDistance">
 			<value>1</value>

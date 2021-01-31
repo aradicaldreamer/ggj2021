@@ -106,6 +106,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{c513c71b-bdc4-41c8-b844-0c7f07614b31}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -143,9 +146,9 @@
 	<object class="MixerBusFader" id="{e915e178-cb5a-497a-9baf-eaa059244184}" />
 	<object class="MultiSound" id="{78def073-bfc3-4a52-80f8-1644cfa1e62d}">
 		<relationship name="sounds">
-			<destination>{051ddd02-ac62-4f99-965b-e8e2fa7ade12}</destination>
-			<destination>{a3518725-4df1-4d2f-8012-23fc9e9e51a9}</destination>
-			<destination>{d1e3864d-1fbf-43e6-8b6a-0b0be70732a5}</destination>
+			<destination>{432e53ce-7d7f-4223-a267-07f28169cca9}</destination>
+			<destination>{6ee4223e-b79c-40e0-bb69-7a04c90801c7}</destination>
+			<destination>{ca3d27e5-a97a-4437-8612-ef712e768f3c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{84b6f169-8092-4b3a-8491-d5be2725244d}">
@@ -156,17 +159,17 @@
 	<object class="MixerBusPanner" id="{37a215c6-9d8e-4e51-b9cd-0add0e5ff0fa}" />
 	<object class="MixerBusFader" id="{f62f472b-512c-4243-90a4-65deabebb011}" />
 	<object class="SpatialiserEffect" id="{e455a2ee-580b-446a-aaae-2d20fe97ed6d}" />
-	<object class="EventSound" id="{051ddd02-ac62-4f99-965b-e8e2fa7ade12}">
+	<object class="EventSound" id="{432e53ce-7d7f-4223-a267-07f28169cca9}">
 		<relationship name="event">
 			<destination>{a2da28eb-0e82-41cc-adec-8f089808c3ac}</destination>
 		</relationship>
 	</object>
-	<object class="EventSound" id="{a3518725-4df1-4d2f-8012-23fc9e9e51a9}">
+	<object class="EventSound" id="{6ee4223e-b79c-40e0-bb69-7a04c90801c7}">
 		<relationship name="event">
 			<destination>{a2da28eb-0e82-41cc-adec-8f089808c3ac}</destination>
 		</relationship>
 	</object>
-	<object class="EventSound" id="{d1e3864d-1fbf-43e6-8b6a-0b0be70732a5}">
+	<object class="EventSound" id="{ca3d27e5-a97a-4437-8612-ef712e768f3c}">
 		<relationship name="event">
 			<destination>{a2da28eb-0e82-41cc-adec-8f089808c3ac}</destination>
 		</relationship>
