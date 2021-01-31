@@ -11,8 +11,8 @@ public class GameOver : MonoBehaviour
     void Awake()
     {
       Cursor.visible = true;
-      timeText.text = "Time: " + PlayerPrefs.GetInt("Time",0).ToString()+"s";
-      besttimeText.text = "Best Time: " + PlayerPrefs.GetInt("BestTime",0).ToString()+"s";
+      timeText.text = "TIME: " + PlayerPrefs.GetInt("Time",0).ToString();
+      besttimeText.text = "BEST TIME: " + PlayerPrefs.GetInt("BestTime",0).ToString();
     }
 
 }

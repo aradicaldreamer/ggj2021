@@ -18,6 +18,6 @@ public class MenuScript : MonoBehaviour
 
   public void GOtoMain ()
   {
-    SceneManager.LoadScene(0);
+    SceneManager.LoadScene("Mainmenu");
   }
 }
