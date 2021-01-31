@@ -17,7 +17,7 @@ public class TImer : MonoBehaviour
     {
         //timeprefs.text  = PlayerPrefs.GetInt("Time", 0).ToString();
         //besttimeprefs.text  = PlayerPrefs.GetInt("BestTime", 0).ToString();
-        textDisplay.GetComponent<TMP_Text>().text = "Time: " + seconds+"s";
+        textDisplay.GetComponent<TMP_Text>().text = ""+seconds;
     }
 
     // Update is called once per frame
