@@ -15,9 +15,9 @@ public class TImer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeprefs.text  = PlayerPrefs.GetInt("Time", 0).ToString();
-        besttimeprefs.text  = PlayerPrefs.GetInt("BestTime", 0).ToString();
-        textDisplay.GetComponent<TMP_Text>().text = "Time: " + seconds+"s";
+        //timeprefs.text  = PlayerPrefs.GetInt("Time", 0).ToString();
+        //besttimeprefs.text  = PlayerPrefs.GetInt("BestTime", 0).ToString();
+        textDisplay.GetComponent<TMP_Text>().text = ""+seconds;
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class TImer : MonoBehaviour
         if (seconds > PlayerPrefs.GetInt("BestTime",0))
         {
           PlayerPrefs.SetInt("BestTime", seconds);
-          besttimeprefs.text = seconds.ToString();
+          //besttimeprefs.text = seconds.ToString();
         }
         GameOver();
     }
