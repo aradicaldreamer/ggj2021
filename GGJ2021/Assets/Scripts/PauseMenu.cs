@@ -22,6 +22,7 @@ public class PauseMenu : MonoBehaviour
           else
           {
             Pause();
+              Cursor.visible = true;
           }
 
         }
