@@ -9,6 +9,7 @@ public class MenuScript : MonoBehaviour
   [FMODUnity.EventRef] public string musicTrackEvent;
   [FMODUnity.EventRef] public string hoverEventName;
   [FMODUnity.EventRef] public string clickEventName;
+  [FMODUnity.EventRef] public string playEventName;
 
   public FMOD.Studio.EventInstance backgroundMusic;
 
@@ -27,6 +28,7 @@ public class MenuScript : MonoBehaviour
   public void PlayGame ()
   {
     backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    FMODUnity.RuntimeManager.PlayOneShot(playEventName, transform.position);
     SceneManager.LoadScene("Game");
   }
 

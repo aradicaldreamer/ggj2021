@@ -1900,6 +1900,7 @@ MonoBehaviour:
   musicTrackEvent: event:/ui/main_menu
   hoverEventName: event:/ui/tick
   clickEventName: event:/ui/confirm
+  playEventName: event:/ui/play
 --- !u!1 &1283623727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,19 +2392,7 @@ MonoBehaviour:
   - eventID: 4
     callback:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1090624469}
-          m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-          m_MethodName: OnClick
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &1407387808
 GameObject:
   m_ObjectHideFlags: 0
