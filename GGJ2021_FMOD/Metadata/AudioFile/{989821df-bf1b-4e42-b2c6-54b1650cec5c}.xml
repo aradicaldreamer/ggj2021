@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{989821df-bf1b-4e42-b2c6-54b1650cec5c}">
+		<property name="assetPath">
+			<value>gameover_05.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.93333333333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{520e42d2-7787-44ad-bf33-cfe908e6cbac}</destination>
+		</relationship>
+	</object>
+</objects>
