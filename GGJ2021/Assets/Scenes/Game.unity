@@ -178,7 +178,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 5.570222
+  OverrideMaxDistance: 6.835298
 --- !u!1 &873007145 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5190685137435486560, guid: 29114e916bd0d49ed980960c3959d3f5, type: 3}
@@ -234,7 +234,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 0
-  OverrideMaxDistance: 5.570222
+  OverrideMaxDistance: 6.1236925
 --- !u!1 &1640372042 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7106209333023635521, guid: 538418f65bb6541819705f88a0cc81ad, type: 3}
@@ -590,7 +590,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 15.414099
+  OverrideMaxDistance: 11.974671
 --- !u!1001 &2424671940721510006
 PrefabInstance:
   m_ObjectHideFlags: 0
