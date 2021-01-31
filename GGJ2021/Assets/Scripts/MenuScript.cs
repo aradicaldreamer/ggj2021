@@ -7,6 +7,8 @@ public class MenuScript : MonoBehaviour
 {
   
   [FMODUnity.EventRef] public string musicTrackEvent;
+  [FMODUnity.EventRef] public string hoverEventName;
+  [FMODUnity.EventRef] public string clickEventName;
 
   public FMOD.Studio.EventInstance backgroundMusic;
 
@@ -24,10 +26,7 @@ public class MenuScript : MonoBehaviour
 
   public void PlayGame ()
   {
-<<<<<<< Updated upstream
     backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-=======
->>>>>>> Stashed changes
     SceneManager.LoadScene("Game");
   }
 
@@ -40,10 +39,17 @@ public class MenuScript : MonoBehaviour
 
   public void GOtoMain ()
   {
-<<<<<<< Updated upstream
     backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-=======
->>>>>>> Stashed changes
     SceneManager.LoadScene("Mainmenu");
+  }
+
+  public void OnHover()
+  {
+    FMODUnity.RuntimeManager.PlayOneShot(hoverEventName, transform.position);
+  }
+
+  public void OnClick()
+  {
+    FMODUnity.RuntimeManager.PlayOneShot(clickEventName, transform.position);
   }
 }
