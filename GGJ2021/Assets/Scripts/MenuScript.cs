@@ -24,7 +24,10 @@ public class MenuScript : MonoBehaviour
 
   public void PlayGame ()
   {
+<<<<<<< Updated upstream
     backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+=======
+>>>>>>> Stashed changes
     SceneManager.LoadScene("Game");
   }
 
@@ -37,7 +40,10 @@ public class MenuScript : MonoBehaviour
 
   public void GOtoMain ()
   {
+<<<<<<< Updated upstream
     backgroundMusic.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+=======
+>>>>>>> Stashed changes
     SceneManager.LoadScene("Mainmenu");
   }
 }
