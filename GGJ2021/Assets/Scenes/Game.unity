@@ -277,6 +277,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 559842678, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2472550617594869905, guid: a17efbc3ed9db4cac8093e5a5d47bf54, type: 3}
       propertyPath: m_Name
       value: UI
@@ -594,6 +598,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2424671941957074288, guid: 1077ccba13b204d759824c6a786b5a7b, type: 3}
+      propertyPath: PlayEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424671941957074288, guid: 1077ccba13b204d759824c6a786b5a7b, type: 3}
+      propertyPath: StopEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424671941957074288, guid: 1077ccba13b204d759824c6a786b5a7b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2424671941957074289, guid: 1077ccba13b204d759824c6a786b5a7b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -642,6 +658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music
       objectReference: {fileID: 0}
+    - target: {fileID: 2424671941957074291, guid: 1077ccba13b204d759824c6a786b5a7b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1077ccba13b204d759824c6a786b5a7b, type: 3}
 --- !u!1001 &6256636764757295296
@@ -651,6 +671,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4674885858803989551, guid: 29114e916bd0d49ed980960c3959d3f5, type: 3}
+      propertyPath: eventName
+      value: event:/ui/game_over
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674885859731399710, guid: 29114e916bd0d49ed980960c3959d3f5, type: 3}
+      propertyPath: eventName
+      value: event:/ui/game_over
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674885859920017835, guid: 29114e916bd0d49ed980960c3959d3f5, type: 3}
+      propertyPath: eventName
+      value: event:/ui/game_over
+      objectReference: {fileID: 0}
     - target: {fileID: 6256636766201309694, guid: 29114e916bd0d49ed980960c3959d3f5, type: 3}
       propertyPath: m_Name
       value: Family
@@ -948,6 +980,10 @@ PrefabInstance:
     - target: {fileID: 7518781839529337021, guid: 132b628c24cba4ac28e1a6f2d717a68f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7518781839529337026, guid: 132b628c24cba4ac28e1a6f2d717a68f, type: 3}
+      propertyPath: spawnRate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 132b628c24cba4ac28e1a6f2d717a68f, type: 3}

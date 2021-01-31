@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Roomba : MonoBehaviour
 {
     [SerializeField] private string tagToCheck;
+    [FMODUnity.EventRef] public string eventName;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class Roomba : MonoBehaviour
 
     public void GameOver()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(eventName, transform.position);
         SceneManager.LoadScene("GameOver");
     }
 }

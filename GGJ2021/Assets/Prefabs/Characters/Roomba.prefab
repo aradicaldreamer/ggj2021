@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToCheck: Cat
+  eventName: event:/ui/game_over
 --- !u!1001 &6976752116926087072
 PrefabInstance:
   m_ObjectHideFlags: 0

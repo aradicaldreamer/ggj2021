@@ -14,6 +14,8 @@ public class FieldOfView : MonoBehaviour
     [SerializeField] private int rayCount = 10;
     private Vector3 origin;
     private float startingAngle;
+
+    [FMODUnity.EventRef] public string eventName;
     
     // Start is called before the first frame update
     private void Start()
@@ -108,6 +110,7 @@ public class FieldOfView : MonoBehaviour
 
     public void GameOver()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(eventName, transform.position);
         SceneManager.LoadScene("GameOver");
     }
 }
