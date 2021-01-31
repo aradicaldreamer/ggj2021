@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -55,7 +56,8 @@ public class FieldOfView : MonoBehaviour
             RaycastHit2D catCheck = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, playerLayerMask);
             if (catCheck.collider != null)
             {
-                Debug.Log("Cat Found!");
+                //Debug.Log("Cat Found!");
+                GameOver();
             }
 
             verticies[vertexIndex] = vertex;
@@ -102,5 +104,10 @@ public class FieldOfView : MonoBehaviour
     public void SetAimDirection(Vector3 aimDirection)
     {
         startingAngle = (GetAngleFromVectorFloat(aimDirection) - fov / 2f) + 90f;
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }

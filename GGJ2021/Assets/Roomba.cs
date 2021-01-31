@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Roomba : MonoBehaviour
 {
@@ -23,8 +24,13 @@ public class Roomba : MonoBehaviour
         if (col.gameObject.CompareTag(tagToCheck))
         {
             // Launch Game Over Event here
-            Debug.Log(this.gameObject.name + "has found the cat!");
-            
+            //Debug.Log(this.gameObject.name + "has found the cat!");
+            GameOver();
         }
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
