@@ -53,7 +53,7 @@ public class TImer : MonoBehaviour
     public void GameOver()
     {
       if (Input.GetKeyDown("space")) {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+      SceneManager.LoadScene("GameOver");
     }
     }
 }
