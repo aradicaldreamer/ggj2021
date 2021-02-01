@@ -7,8 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class FieldOfView : MonoBehaviour
 {
-    [SerializeField] private LayerMask layerMask;
-    [SerializeField] private LayerMask playerLayerMask;
+    //[SerializeField] private LayerMask layerMask;
+    //[SerializeField] private LayerMask playerLayerMask;
+    string[] collidableLayers = {"Player", "Objects"};
     private Mesh mesh;
     [SerializeField] private float fov = 90f;
     [SerializeField] private int rayCount = 10;
@@ -39,10 +40,13 @@ public class FieldOfView : MonoBehaviour
 
         int vertexIndex = 1;
         int triangleIndex = 0;
+        int layersToCheck = LayerMask.GetMask(collidableLayers);
+        int playerLayer = LayerMask.GetMask("Player");
         for (int i = 0; i <= rayCount; i++)
         {
             Vector3 vertex;
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layersToCheck);
+
             if (raycastHit2D.collider == null)
             {
                 // No hit
@@ -52,15 +56,25 @@ public class FieldOfView : MonoBehaviour
             {
                 // hit
                 // Debug.Log("Raycast hit object with name " + raycastHit2D.transform.name);
-                vertex = raycastHit2D.point;
+                if (playerLayer == (playerLayer | (1 << raycastHit2D.collider.gameObject.layer)))
+                {
+                    // we want the light to shine over the cat
+                    vertex = origin + GetVectorFromAngle(angle) * viewDistance;
+                    GameOver();
+                }
+                else
+                {
+                    vertex = raycastHit2D.point;
+                } 
+                
             }
 
-            RaycastHit2D catCheck = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, playerLayerMask);
-            if (catCheck.collider != null)
-            {
-                //Debug.Log("Cat Found!");
-                GameOver();
-            }
+            // RaycastHit2D catCheck = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, playerLayerMask);
+            // if (catCheck.collider != null)
+            // {
+            //     //Debug.Log("Cat Found!");
+            //     GameOver();
+            // }
 
             verticies[vertexIndex] = vertex;
 
